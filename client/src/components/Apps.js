@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getApps } from '../actions/apps';
 import {
   Container,
   Grid, 
@@ -15,10 +14,6 @@ import {
 
 class Apps extends React.Component {
   state = { category: '' }
-
-  componentDidMount() {
-    this.props.dispatch(getApps())
-  }
 
   apps = () => {
     let { apps } = this.props;
