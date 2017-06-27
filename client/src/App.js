@@ -8,8 +8,8 @@ import NoMatch from './components/NoMatch';
 const App = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/apps" components={Apps} />
-    <Route exact path="/apps/:id" components={AppView} />
+    <Route exact path="/apps" component={Apps} />
+    <Route exact path="/apps/:id" component={AppView} />
     <Route component={NoMatch} />
   </Switch>
 ) 
