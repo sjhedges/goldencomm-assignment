@@ -13,10 +13,10 @@ import { Divider,
          TextArea,
        } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import meeting from './standing-meeting.jpg';
-import computer from './computer.jpg';
-import computer2 from './computer2.jpeg';
-import computer3 from './computer3.jpg';
+import meeting from './photos/standing-meeting.jpg';
+import computer from './photos/computer.jpg';
+import computer2 from './photos/computer2.jpeg';
+import computer3 from './photos/computer3.jpg';
 import './App.css'
 
 class App extends Component {
