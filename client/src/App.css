@@ -38,6 +38,7 @@
 
 .cardPhoto {
   height: 200px !important;
+  filter: grayscale(100%);
 }
 
 .learnMore, .advice, a, .navLink {

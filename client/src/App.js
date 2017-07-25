@@ -33,7 +33,7 @@ class App extends Component {
 
     const { firstName, lastName, email, assistance } = this.state;
 
-    const learn = <Header as='h4' color='red' textAlign='right'>Learn More!</Header>
+    const learn = <Header as='h4' color='red' textAlign='right'>Learn More</Header>
 
     return(
 
@@ -68,7 +68,7 @@ class App extends Component {
           </Container>
         </Segment>
         <div className='photo'>
-        <Header as='h4' className='photoText'> I am on the image!</Header>
+
         </div>
         <Container>
           <Segment basic>
@@ -198,6 +198,7 @@ class App extends Component {
                 >Submit
                 </Button>
               </Segment>
+              
               </Form>
             </Segment>
           </Segment.Group>
