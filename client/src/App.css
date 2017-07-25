@@ -1,10 +1,6 @@
 .photo {
   height: 400px !important;
   width: 100%;
-  position: relative;
-  background-image: url(./photos/standing-meeting.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .photoText {
   position:absolute;
@@ -68,5 +64,9 @@ p {
 }
 
 .top {
+  background-color: #E3E3E3 !important;
+}
+
+.contactForm {
   background-color: #E3E3E3 !important;
 }

@@ -13,7 +13,7 @@ import { Divider,
          TextArea,
        } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import meeting from './photos/standing-meeting.jpg';
+import meeting from './photos/team-meeting.jpg';
 import computer from './photos/computer.jpg';
 import computer2 from './photos/computer2.jpeg';
 import computer3 from './photos/computer3.jpg';
@@ -44,9 +44,9 @@ class App extends Component {
               <Menu pointing secondary>
                 <Menu.Menu position='right'>
                   <Icon name='mail outline' size='large' />
-                  <p>Email Us</p>
+                  <p className='navLink'>Email Us</p>
                   <Icon name='call' size='large' />
-                  <p>Call Us 479.725.1000</p>
+                  <p className='navLink'>Call Us 479.725.1000</p>
                 </Menu.Menu>
               </Menu>
             </Container>
@@ -56,19 +56,19 @@ class App extends Component {
             <Menu pointing secondary>
             <Header as='h2'>MerchantProcessing.com</Header>
               <Menu.Menu position='right'>
-                <Menu.Item name='Merchant Accounts' />
-                <Menu.Item name='Banks' />
-                <Menu.Item name='Compliance' />
-                <Menu.Item name='People' />
-                <Menu.Item name='About' />
-                <Menu.Item name='Contact' />
+                <Menu.Item name='Merchant Accounts' className='navLink' />
+                <Menu.Item name='Banks' className='navLink' />
+                <Menu.Item name='Compliance' className='navLink' />
+                <Menu.Item name='People' className='navLink' />
+                <Menu.Item name='About' className='navLink' />
+                <Menu.Item name='Contact' className='navLink' />
               </Menu.Menu>
             </Menu>
           </div>
           </Container>
         </Segment>
-        <div className='photo'>
-
+        <div>
+          <Image src={ meeting } className='photo' />
         </div>
         <Container>
           <Segment basic>
@@ -128,7 +128,7 @@ class App extends Component {
           </div>
 
           <Segment.Group horizontal>
-            <Segment basic>
+            <Segment>
               <Header as='h3'>Get Free Advice From Our Experts</Header>
               <p>Our helpful and always ready experts are a click or call away. Anytime. Anywhere.</p>
               <Header as='h6' className='advice'>
@@ -143,7 +143,7 @@ class App extends Component {
               <p>We will help you connect with your <a>support team.</a></p>
             </Segment>
 
-            <Segment>
+            <Segment className='contactForm'>
               <Header as='h3'>Contact Us</Header>
               <Form>
               <Form.Field required>
@@ -198,7 +198,7 @@ class App extends Component {
                 >Submit
                 </Button>
               </Segment>
-              
+
               </Form>
             </Segment>
           </Segment.Group>
